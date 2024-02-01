@@ -1,32 +1,97 @@
 <% layout('./layouts/boilerplate.ejs')%>
+
 <!-- Hero Section with Background Image -->
-<section class="hero bg-cover bg-center py-20 h-64" style="background-image: url('/imgs/Banner-BG\ \(1\).png');">
-    <div class="container mx-auto text-center text-white">
-        <h1 class="text-5xl font-bold mb-6 text-[#6cbcc4]">Welcome to STAKK</h1>
-        <p class="text-xl mb-8">Innovative Solutions for Digital Assets</p>
-        <a href="/contact-us"
-            class="bg-[#6cbcc4] hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out">
-            Sign Up
-        </a>
-        <a href="https://www.youtube.com/@STAKKFIN" target="_blank"
-            class="bg-[#6cbcc4] hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out ml-4">
-            Videos
-        </a>
+<section
+    class="flex items-center justify-center min-h-screen bg-slate-800 text-white bg-center bg-cover bg-blend-overlay bg-fixed bg-black/30"
+    style="background-image: url('/imgs/Banner-BG\ \(1\).png')">
+    <div class="text-center">
+        <p class="text-4xl font-semibold mb-8">Join us as we explore the opportunities of the future economy built on
+            the bitcoin standard</p>
+        <div class="mt-20">
+            <a href="/contact-us"
+                class="bg-[#6cbcc4] hover:bg-cyan-600 text-white font-bold py-4 px-8 text-lg rounded transition duration-300 ease-in-out">
+                Sign Up
+            </a>
+            <a href="https://www.youtube.com/@STAKKFIN" target="_blank"
+                class="bg-transparent border-2 border-white hover:bg-[#6cbcc4] text-white font-bold py-4 px-8 text-lg rounded transition duration-300 ease-in-out ml-4">
+                Videos
+            </a>
+        </div>
     </div>
 </section>
 
-<!-- Services Section -->
-<section class="services py-20">
-    <div class="container mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-10">Our Services</h2>
-        <!-- Services list -->
-    </div>
-</section>
 
-<!-- About Section -->
-<section class="about bg-white py-20">
-    <div class="container mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-10">About Us</h2>
-        <!-- About content -->
+<!-- Content Cards-->
+<div class="flex min-h-screen items-center justify-center bg-[#6cbcc4]">
+    <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div
+            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+                <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                    src="/imgs/Services.avif"
+                    alt="" />
+            </div>
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+            </div>
+            <div
+                class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 class="font-dmserif text-3xl font-bold text-white">Services</h1>
+                <p class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    STAKK provides expert Bitcoin trading and digital asset management, with personalized courses and strategic
+                    consultations.</p>
+                <a href="/services"
+                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+                    <button>Learn More</button>
+                </a>
+
+            </div>
+        </div>
+        <div
+            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+                <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                    src="imgs/resources.jpeg"
+                    alt="" />
+            </div>
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+            </div>
+            <div
+                class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 class="font-dmserif text-3xl font-bold text-white">Resources</h1>
+                <p
+                    class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    STAKK Enhances trading experience and education with courses, tutorials, and articles for skill development.</p>
+                <a href="/resources"
+                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+                    <button>Learn More</button>
+                </a>
+            </div>
+        </div>
+        <div
+            class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+            <div class="h-96 w-72">
+                <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125"
+                    src="/imgs/shop.png"
+                    alt="" />
+            </div>
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
+            </div>
+            <div
+                class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 class="font-dmserif text-3xl font-bold text-white">Shop</h1>
+                <p
+                    class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolore adipisci placeat.</p>
+                <a href="/shop"
+                    class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+                    <button>Shop Now</button>
+                </a>
+            </div>
+        </div>
+
     </div>
-</section>
+   
+</div>
